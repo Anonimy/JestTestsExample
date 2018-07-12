@@ -1,6 +1,6 @@
 'use strict';
 
-import map from '../map';
+import map from '../src/map';
 
 describe('# MAP', () => {
     it('should be a function', () => {

@@ -1,6 +1,6 @@
 'use strict';
 
-import reduce from '../reduce';
+import reduce from '../src/reduce';
 
 describe('# REDUCE', () => {
     it('should be a function', () => {

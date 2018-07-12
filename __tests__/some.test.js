@@ -1,6 +1,6 @@
 'use strict';
 
-import some from '../some';
+import some from '../src/some';
 
 describe("# SOME", () => {
     it('should be a function', () => {
@@ -26,5 +26,8 @@ describe("# SOME", () => {
         expect(some([1, 2, 3], function (value) {
             return (this || value === 4);
         }, false)).toBe(false);
+        expect(some([1, 2, 3], function () {
+            return this;
+        }, 'abcd')).toBe(true);
     });
 });

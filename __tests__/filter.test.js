@@ -1,6 +1,6 @@
 'use strict';
 
-import filter from '../filter';
+import filter from '../src/filter';
 
 describe('# FILTER', () => {
     it('should be a function', () => {

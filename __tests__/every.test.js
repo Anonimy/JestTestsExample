@@ -1,6 +1,6 @@
 'use strict';
 
-import every from '../every';
+import every from '../src/every';
 
 describe("# EVERY", () => {
     it('should be a function', () => {
@@ -26,5 +26,8 @@ describe("# EVERY", () => {
         expect(every([1, 2, 3], function () {
             return this;
         }, true)).toBe(true);
+        expect(every([1, 2, 3], function () {
+            return this;
+        }, 'abcd')).toBe(true);
     });
 });

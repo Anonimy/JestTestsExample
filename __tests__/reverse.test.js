@@ -1,6 +1,6 @@
 'use strict';
 
-import reverse from '../reverse';
+import reverse from '../src/reverse';
 
 describe('# REVERSE', () => {
     it('should be a function', () => {

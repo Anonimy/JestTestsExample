@@ -7,7 +7,7 @@ export default (parameter, callback, thisArg) => {
         throw new TypeError(`${callback} is not a function`);
     }
     for (let i = 0; i < parameterObjetified.length && !final; i++) {
-        final = callback.call(thisArg, parameterObjetified[i], i, parameterObjetified);
+        final = !!callback.call(thisArg, parameterObjetified[i], i, parameterObjetified);
     }
     return final;
 };
